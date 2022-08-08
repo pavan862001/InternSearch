@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login Page</title>
+<style>
+			h1 {
+				color: #680068;
+				font-family: arial, sans-serif;
+				font-size: 100px;
+				font-weight: bold;
+				margin-top: 0px;
+				margin-bottom: 1px;
+				}
+		body{
+				background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm222batch5-kul-03.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=08fbfb223887d33030e97becaf4e20dc");
+				background-repeat: no-repeat;
+				height: 100%;
+				background-position: center;
+			
+			  background-size: cover;
+			}
+	form {
+		    border: 3px solid black;
+		    width: 50%;
+		    alignment : center;
+		    margin-top: 50px;
+			}
+		input[type=text], input[type=password] {
+						  width: 100%;
+						  padding: 12px 20px;
+						  margin: 8px 0;
+						  display: inline-block;
+						  border: 1px solid #ccc;
+						  box-sizing: border-box;
+						}
+
+			/* Set a style for all buttons */
+			button {
+			  background-color: #04AA6D;
+			  color: white;
+			  padding: 14px 20px;
+			  margin: 8px 0;
+			  border: none;
+			  cursor: pointer;
+			  width: 25%;
+			}
+			.inlogo{
+			height: 100px;
+			   width: 100%;
+			   background-image: url("logo.jpg");
+			   background-repeat: no-repeat;
+			   background-position: right;
+			
+			}
+</style>
+
+</head>
+<body>
+	<center><div class="inlogo" background="logo.jpg">
+	 <h1 style="color:#680068">InternSearch</h1>
+	 <p>Where curiosity meets Opportunity...</p>
+	</div></center>
+	
+	<center><div class="container">
+		<div class="row">
+			<form action="/login"  method="post"
+				class="form-signin">
+				<h2 class="form-signin-heading">Please sign in</h2>
+				
+				#set ($paramName = $request.get("error"))
+				#if($paramName == true)
+				<h2>Invalid credentials</h2>
+				#end
+				
+				
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="username">Username</label>
+						<input  type="text" class="form-control" id="name"
+							name="username" placeholder="Jane Doe" style="width:300px" >
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail2">Password</label> 
+						<input type="password" class="form-control"  name="password"
+							placeholder="jane.doe@example.com" style="width: 300px">
+					</div>
+					
+					<button class="btn btn-md btn-success" type="submit">Sign
+					in</button>
+				</div>
+				
+			</form>
+			#*<span>Time:</span>
+	<ul>
+		<li>From controller: $time</li>
+		<li>From velocity: $dateTool</li>
+	</ul>
+	<span>Message: $message</span>*#
+			<h3>OR</h3>
+			<p>Dont't have an account... click hear to </p>
+			<a href="registration.htm" class="btn btn-md btn-primary" role="button"><button>Register</button></a>
+
+
+		</div>
+	</div></center>
+	<!-- /container -->
+
+
+</body>
+</html>
