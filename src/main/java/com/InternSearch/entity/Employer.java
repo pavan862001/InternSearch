@@ -18,7 +18,7 @@ public class Employer {
 
 	private String name;
 	private String email;
-	private String linkedInUrl;
+	private String education;
 	private String username;
 
 	
@@ -34,11 +34,11 @@ public class Employer {
 		this.username = username;
 	}
 
-	public Employer(String name, String email, String linkedInUrl, String username) {
+	public Employer(String name, String email, String education, String username) {
 
 		this.name = name;
 		this.email = email;
-		this.linkedInUrl = linkedInUrl;
+		this.education = education;
 		this.username = username;
 	}
 
@@ -75,12 +75,12 @@ public class Employer {
 		this.email = email;
 	}
 
-	public String getLinkedInUrl() {
-		return linkedInUrl;
+	public String geteducation() {
+		return education;
 	}
 
-	public void setLinkedInUrl(String linkedInUrl) {
-		this.linkedInUrl = linkedInUrl;
+	public void seteducation(String education) {
+		this.education = education;
 	}
 
 	public List<Job> getPostedJobs() {

@@ -86,10 +86,10 @@
 		<h3> Name : $candidate.Name </h3>
 		</div>
 		<div class ="col-md-3">
-		<h4>Linkedin URL : $candidate.linkedInUrl </h4>
+		<h4>Education : $candidate.education </h4>
 		</div>
 		<div class ="col-md-3">
-		<h4>University name : $candidate.univName </h4>
+		<h4>College  name : $candidate.college </h4>
 		</div>
 		<div class ="col-md-3">
 		<h4>GPA : $candidate.gpa /4.0 </h4>

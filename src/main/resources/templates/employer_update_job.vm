@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -10,7 +9,6 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
 </head>
 <body>
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -30,13 +28,13 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li  class="active"> <a href=#>Post a Internship</a></li>
-						<li><a href="employer_jobs.htm">List Internships</a></li>
-
+						##<li ><a href="listjobs.htm">List Internships<span
+							##	class="badge">${jobs.size()}</span></a></li>
+							
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="./">Questions? Call us at
-								1234567890 <span class="sr-only">(current)</span>
+								1-866-204-6764 <span class="sr-only">(current)</span>
 						</a></li>
 
 						<li>Welcome</li>
@@ -49,42 +47,37 @@
 			</div>
 			<!--/.container-fluid -->
 		</nav>
-
-
-
 		<div class="row">
-			<form action="$employer_post_job_url"  method="post"
-				class="form-signin" modelAttribute="postJob">
-				<h2 class="form-signin-heading">Post a Internship</h2>
-
+			<form action="$employer_update_job_url"  method="post"
+				class="form-signin" modelAttribute="updateJob">
+				<input type="hidden" value="$updateJob.id" id="id"
+							name="id">
+				#springBind("updateJob.id")
+				<h2 class="form-signin-heading">Edit a Internship</h2>
 				<div class="col-md-6">
 					<div class="form-group">
 						<label for="title">Internship Title</label>
 						<input  type="text" class="form-control" id="title"
-							name="title" placeholder="Product Developer" style="width:400px" required/>
-						#springBind("postJob.title")
+							name="title" value = "$updateJob.title" placeholder="Product Developer" style="width:400px" required/>
+						#springBind("updateJob.title")
 						#springShowErrors("<br>" "")<br>
 					</div>
-
-					<div class="row">
-				<div class="input-group">
-					<label for="description">Internship Description</label>
-					<textarea path="jobDescription" class="form-control"
-						placeholder="Internship Description" size="300" id="description"
-							name="description"  required ></textarea>
-						#springBind("postJob.description")
-						#springShowErrors("<br>" "")<br>
 					
-				</div>
-			</div>
-					
-										
 					<div class="form-group">
-						<label for="description">Internship Stipend</label>
+						<label for="description">Internship Description</label>
+						<input type="text" class="form-control" id="description"
+							name="description" value="$updateJob.description"
+						placeholder="Product Developer who'd be responsible in developing the app right from Conception to Deployment" style="width:400px" required/>
+						#springBind("updateJob.description")
+						#springShowErrors("<br>" "")<br>
+					</div>
+					
+					<div class="form-group">
+						<label for="description">Stipend</label>
 						<input type="number" class="form-control" id="stipend" 
-							name="stipend" 
+							name="stipend" value="$updateJob.stipend"
 						 style="width:400px" required/>
-						#springBind("postJob.stipend")
+						#springBind("updateJob.stipend")
 						#springShowErrors("<br>" "")<br>
 					</div>
 					
@@ -94,20 +87,18 @@
 							<option value="Full Time">Full Time</option>
 							<option value="Part Time">Part Time</option>
 						</select>
-					</div> 
-					
-					
+					</div>
 					
 					<div class="form-group">
 						<label for="location">Location</label>
 						<input type="text" class="form-control" id="location"
-							name="location" 
-						placeholder="Chicago, Boston" style="width:400px" required/>
-						#springBind("postJob.location")
+							name="location" value="$updateJob.location"
+						placeholder="Chicago, Massachussets" style="width:400px" required/>
+						#springBind("updateJob.location")
 						#springShowErrors("<br>" "")<br>
 					</div>
 					
-					<button class="btn btn-md btn-success" type="submit">Post Internship</button>
+					<button class="btn btn-md btn-success" type="submit">Update Internship</button>
 				</div>
 			</form>
   <br>

@@ -28,8 +28,8 @@ public class Job {
 	@NotEmpty(message = "Description cant be empty")
 	private String description;
 
-	@NotEmpty(message = "Experience cant be empty")
-	private String experience;
+	
+	private String stipend;
 
 	// @NotEmpty(message = "Type cant be empty")
 	private String type;
@@ -87,12 +87,12 @@ public class Job {
 		this.description = description;
 	}
 
-	public String getExperience() {
-		return experience;
+	public String getstipend() {
+		return stipend;
 	}
 
-	public void setExperience(String experience) {
-		this.experience = experience;
+	public void setstipend(String stipend) {
+		this.stipend = stipend;
 	}
 
 	public String getType() {

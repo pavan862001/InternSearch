@@ -80,11 +80,11 @@
 					
 										
 					<div class="form-group">
-						<label for="description">Stipend</label>
-						<input type="number" class="form-control" id="experience" 
-							name="experience" 
+						<label for="description">Internship Stipend</label>
+						<input type="number" class="form-control" id="stipend" 
+							name="stipend" 
 						 style="width:400px" required/>
-						#springBind("postJob.experience")
+						#springBind("postJob.stipend")
 						#springShowErrors("<br>" "")<br>
 					</div>
 					

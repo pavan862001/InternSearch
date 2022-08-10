@@ -104,8 +104,8 @@
 					<tr>
 						<th>NAME</th>
 						<th>EMAIL</th>
-						<th>UNIVERSITY NAME</th>
-						<th>LINKEDIN URL</th>
+						<th>COLLEGE NAME</th>
+						<th>EDUCATION</th>
 						<th>GPA</th>
 						<th>CURRENT STATUS</th>
 						<th>ACTIONS</th>
@@ -116,8 +116,8 @@
 						<tr>
 							<td>${candidate.Name}</td>
 							<td>${candidate.email}</td>
-							<td>${candidate.univName}</td>
-							<td>${candidate.linkedInUrl}</td>
+							<td>${candidate.college}</td>
+							<td>${candidate.education}</td>
 							<td>${candidate.gpa}</td>
 							<td>${candidate.applicationStatus.toUpperCase()}</td>
 							<td>#if($candidate.applicationStatus == "applied" || $candidate.applicationStatus == "rejected")

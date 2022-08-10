@@ -130,7 +130,7 @@
 						<th></th>
 						<th >INTERNSHIP TITLE</th>
 						<th>INTERNSHIP TYPE</th>
-						<th>STIPEND</th>
+						<th>INTERNSHIP STIPEND</th>
 						<th>LOCATION</th>
 						<th>COMPANY</th>
 						<th>POSTED ON</th>
@@ -148,7 +148,7 @@
 								</button></td>
 							<td>${job.title}</td>
 							<td>${job.type}</td>
-							<td>${job.experience}</td>
+							<td>${job.stipend}</td>
 							<td>${job.location}</td>
 							<td>${job.employer.username}</td>
 							<td>${job.postedOn}</td>
@@ -195,7 +195,7 @@
 									<h3>Other details:</h3>
 									
 										<ul>
-										  <li>Stipend : ${job.experience}</li>
+										  <li>Internship stipend : ${job.stipend}</li>
 										  <li>Internship Type : ${job.type}</li>
 										  <li>Internship Status : ${job.status}</li>
 										 </ul>

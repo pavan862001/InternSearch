@@ -22,9 +22,9 @@ public class UserRegistrationRequest {
 
 	private String email;
 
-	private String linkedInUrl;
+	private String education;
 
-	private String univName;
+	private String college;
 	
 	private Float gpa;
 
@@ -83,18 +83,18 @@ public class UserRegistrationRequest {
 		this.email = email;
 	}
 	
-	public String getLinkedInUrl() {
-		return linkedInUrl;
+	public String geteducation() {
+		return education;
 	}
-	public void setLinkedInUrl(String linkedInUrl) {
-		this.linkedInUrl = linkedInUrl;
+	public void seteducation(String education) {
+		this.education = education;
 	}
 	
-	public String getUnivName() {
-		return univName;
+	public String getcollege() {
+		return college;
 	}
-	public void setUnivName(String univName) {
-		this.univName = univName;
+	public void setcollege(String college) {
+		this.college = college;
 	}
 	
 	public Float getGpa() {

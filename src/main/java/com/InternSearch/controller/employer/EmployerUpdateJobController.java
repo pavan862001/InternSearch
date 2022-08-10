@@ -65,7 +65,7 @@ public class EmployerUpdateJobController {
 
 			newJob.setTitle(title);
 			newJob.setDescription(description);
-			newJob.setExperience(job.getExperience());
+			newJob.setstipend(job.getstipend());
 			newJob.setLocation(location);
 			String type = request.getParameter("jobType");
 			// System.out.println(type);

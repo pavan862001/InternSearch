@@ -74,10 +74,10 @@
 					
 					<div class="form-group">
 						<label for="description">Stipend</label>
-						<input type="number" class="form-control" id="experience" 
-							name="experience" value="$updateJob.experience"
+						<input type="number" class="form-control" id="stipend" 
+							name="stipend" value="$updateJob.stipend"
 						 style="width:400px" required/>
-						#springBind("updateJob.experience")
+						#springBind("updateJob.stipend")
 						#springShowErrors("<br>" "")<br>
 					</div>
 					

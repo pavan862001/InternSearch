@@ -18,11 +18,11 @@ public class Candidate {
 
 	private String name;
 
-	private String univName;
+	private String college;
 
 	private String email;
 
-	private String linkedInUrl;
+	private String education;
 
 	private Float gpa;
 
@@ -41,13 +41,13 @@ public class Candidate {
 		
 	}
 	
-	public Candidate(String name, String univName, String email, String linkedInUrl, Float gpa,
+	public Candidate(String name, String college, String email, String education, Float gpa,
 			String username) {
 
 		this.name = name;
-		this.univName = univName;
+		this.college = college;
 		this.email = email;
-		this.linkedInUrl = linkedInUrl;
+		this.education = education;
 		this.gpa = gpa;
 		this.username = username;
 	}
@@ -86,12 +86,12 @@ public class Candidate {
 		this.applicationStatus = applicationStatus;
 	}
 
-	public String getUnivName() {
-		return univName;
+	public String getcollege() {
+		return college;
 	}
 
-	public void setUnivName(String univName) {
-		this.univName = univName;
+	public void setcollege(String college) {
+		this.college = college;
 	}
 
 	public String getEmail() {
@@ -102,12 +102,12 @@ public class Candidate {
 		this.email = email;
 	}
 
-	public String getLinkedInUrl() {
-		return linkedInUrl;
+	public String geteducation() {
+		return education;
 	}
 
-	public void setLinkedInUrl(String linkedInUrl) {
-		this.linkedInUrl = linkedInUrl;
+	public void seteducation(String education) {
+		this.education = education;
 	}
 
 	public Float getGpa() {
