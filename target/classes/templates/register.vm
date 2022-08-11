@@ -108,7 +108,7 @@
 					<div class="input-group">
 						<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
 						<input  class="form-control" name="name"
-							placeholder="Your Name" size="100" >
+							placeholder="Your Name/Company name" size="100" >
 						
 					</div>
 
